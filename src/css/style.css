@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #222;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #0077ff;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #0077ff;
+}
+
+.login-btn {
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #005ed1;
+  transform: scale(1.05);
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 119, 255, 0.7), rgba(0, 119, 255, 0.7)),
+              url('fundo.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+  animation: fadeInUp 1.5s ease;
+}
+
+.btn {
+  background-color: #fff;
+  color: #0077ff;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0077ff;
+  color: white;
+  transform: scale(1.05);
+}
+
+.como-funciona {
+  text-align: center;
+  padding: 80px 40px;
+  background-color: #ffffff;
+}
+
+.como-funciona h3 {
+  font-size: 1.8rem;
+  margin-bottom: 50px;
+  color: #0077ff;
+}
+
+.cards-funciona {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.cards-funciona .card {
+  background-color: #f9fbff;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  padding: 30px;
+  width: 280px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cards-funciona .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.cards-funciona h4 {
+  color: #0077ff;
+  margin-bottom: 10px;
+}
+
+.destaque {
+  text-align: center;
+  padding: 80px 40px;
+}
+
+.destaque h3 {
+  font-size: 1.8rem;
+  color: #0077ff;
+  margin-bottom: 40px;
+}
+
+.cards-destaque {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card-prof {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  width: 220px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-prof img {
+  width: 100%;
+  border-radius: 50%;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.card-prof:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.card-prof h4 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.card-prof p {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.destaque .btn {
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.quiz-chamada {
+  background-color: #0077ff;
+  color: white;
+  text-align: center;
+  padding: 80px 40px;
+}
+
+.quiz-chamada h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.quiz-chamada p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.quiz-chamada .btn {
+  background-color: white;
+  color: #0077ff;
+}
+
+.quiz-chamada .btn:hover {
+  background-color: #005ed1;
+  color: white;
+}
+
+footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  color: #555;
+  font-size: 0.9rem;
+  border-top: 1px solid #ddd;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cards-funciona, .cards-destaque {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text h2 {
+    font-size: 1.6rem;
+  }
+}
