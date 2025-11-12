@@ -1,0 +1,125 @@
+/* ===== ÁREA DE TRABALHO ===== */
+.areas-trabalho {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #F3F6FA;
+}
+
+.areas-trabalho h2 {
+  color: #1E4E8C;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.areas-trabalho .intro {
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+  color: #475569;
+  font-size: 1.1rem;
+}
+
+/* ===== CONTAINER DE CARDS ===== */
+.areas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.area-card {
+  background-color: #FFFFFF;
+  width: 220px;
+  border-radius: 16px;
+  padding: 1.5rem 1rem;
+  text-decoration: none;
+  color: #1E293B;
+  box-shadow: 0 6px 15px rgba(58, 123, 213, 0.12);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.area-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.area-card h3 {
+  color: #3A7BD5;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.area-card p {
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.area-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(58, 123, 213, 0.2);
+}
+
+.area-card:hover img {
+  transform: scale(1.1);
+}
+
+/* ===== AVISO (LCD) ===== */
+.aviso {
+  margin-top: 3rem;
+  background-color: #F9F4E7; /* bege claro */
+  border-left: 5px solid #C49A6C; /* bege escuro/dourado */
+  padding: 1.2rem;
+  border-radius: 8px;
+  max-width: 700px;
+  margin-inline: auto;
+  color: #5C4B3B; /* tom terroso para o texto */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  font-size: 0.95rem;
+  transition: transform 0.3s ease;
+}
+
+.aviso:hover {
+  transform: scale(1.02);
+}
+
+.aviso strong {
+  color: #4E3C2A;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: linear-gradient(135deg, #3A7BD5 0%, #1E4E8C 100%);
+  color: #F8FAFC;
+  text-align: center;
+  padding: 1.2rem 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-top: 3rem;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.footer p:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+  .areas-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .area-card {
+    width: 90%;
+  }
+}

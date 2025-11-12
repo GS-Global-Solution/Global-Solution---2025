@@ -1,87 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="./src/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReCode - Reinvente seu Futuro</title>
+  <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
-    <header>
-  <h1>WorkFinder</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">Início</a></li>
-      <li><a href="profissionais.html">Profissionais</a></li>
-      <li><a href="quiz.html">Quiz</a></li>
-      <li><a href="feed.html">Feed</a></li>
-    </ul>
-  </nav>
-  <a href="login.html" class="login-btn">Entrar</a>
 
-</header>
+  <header class="header">
+    <h1 class="logo">Re<span>Code</span></h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="area_trabalho.html">Área de Trabalho</a></li>
+        <li><a href="curriculo.html">Currículo</a></li>
+        <li><a href="feed.html">Feed</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<section class="hero">
-  <div class="hero-text">
-    <h2>Conectando talentos para um futuro do trabalho mais justo e inovador</h2>
-    <p>Descubra profissionais inspiradores, compartilhe conhecimento e cresça junto com a nova geração do trabalho colaborativo.</p>
-    <a href="profissionais.html" class="btn">Explorar Profissionais</a>
-  </div>
-</section>
-
-<section class="como-funciona">
-  <h3>Como o WorkFinder funciona?</h3>
-  <div class="cards-funciona">
-    <div class="card">
-      <h4>1. Explore</h4>
-      <p>Conheça profissionais de diversas áreas e descubra novas oportunidades de conexão.</p>
+  
+  <section class="banner">
+    <div class="banner-text">
+      <h2>“Não é a máquina que avalia o trabalhador — é o trabalhador que usa a máquina pra se reinventar.”</h2>
+      <p>Descubra novas profissões, entenda seu momento e crie sua própria transição para o futuro do trabalho.</p>
     </div>
-    <div class="card">
-      <h4>2. Conecte-se</h4>
-      <p>Troque experiências, colabore em projetos e compartilhe aprendizados.</p>
-    </div>
-    <div class="card">
-      <h4>3. Cresça</h4>
-      <p>Desenvolva suas competências e contribua para um futuro do trabalho mais humano e sustentável.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="destaque">
-  <h3>Profissionais em destaque</h3>
-  <div class="cards-destaque">
-    <div class="card-prof">
-      <img src="ana.jpg" alt="Foto de Ana Souza">
-      <h4>Ana Souza</h4>
-      <p>Curador de Inteligência Artificial</p>
-    </div>
-    <div class="card-prof">
-      <img src="lucas.jpg" alt="Foto de Lucas Lima">
-      <h4>Lucas Lima</h4>
-      <p>Arquiteto de mundos virtuais</p>
-    </div>
-    <div class="card-prof">
-      <img src="maria.jpg" alt="Foto de Maria Ribeiro">
-      <h4>Maria Ribeiro</h4>
-      <p>Designer de impacto social</p>
-    </div>
-  </div>
-  <a href="profissionais.html" class="btn">Ver Todos os Profissionais</a>
-</section>
+  
+  <main id="recode">
+    <section class="recode-container">
+      <h2>Descubra sua profissão do futuro</h2>
+      <p class="intro">Escolha sua área, informe sua nota e veja o que o futuro reserva para você.</p>
 
-<section class="quiz-chamada">
-  <h3>Teste seus conhecimentos!</h3>
-  <p>Você sabe quais habilidades são mais valorizadas no futuro do trabalho?</p>
-  <a href="./src/pages/quiz.html" class="btn">Fazer o Quiz</a>
-</section>
+      <div class="formulario">
+        <label for="area">Área de trabalho:</label>
+        <select id="area">
+          <option value="">Selecione</option>
+          <option value="hospital">Hospital</option>
+          <option value="cozinha">Cozinha</option>
+          <option value="educacao">Fábrica / Obra</option>
+          <option value="tecnologia">Escritório</option>
+          <option value="industria">Indústria</option>
+          <option value="comercio">Comércio</option>
+        </select>
 
-<footer>
-  <p>© 2025 WorkFinder | GS-Global Solution 2025</p>
-</footer>
+        <label for="nota">Sua nota (0 a 10):</label>
+        <input type="number" id="nota" min="0" max="10" step="0.1">
 
+        <button onclick="analisar()">Analisar</button>
+      </div>
 
+      <div id="resultado" class="resultado"></div>
+    </section>
+  </main>
 
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="footer">
+    <p>© 2025 ReCode | Reinvente seu Futuro - Global Solution</p>
+  </footer>
 
-  <link rel="stylesheet" href="scripts.js">  
+  <script src="/src/js/script.js"></script>
 </body>
 </html>

@@ -1,1 +1,1 @@
-# Global-Solution---2025
+# Global-Solution-2025

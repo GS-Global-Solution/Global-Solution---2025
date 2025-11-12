@@ -1,0 +1,130 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #eef5fb;
+  color: #1e3a5f;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(135deg, #3a7bd5, #1e4e8c);
+  color: white;
+  padding: 1rem 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #ffffffcc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* MAIN */
+#container {
+  background: white;
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  color: #1e4e8c;
+}
+
+#inputResposta {
+  margin-top: 2rem;
+}
+
+input, select {
+  padding: 0.8rem;
+  width: 80%;
+  border-radius: 8px;
+  border: 1px solid #a5b8d3;
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #3a7bd5;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #1e4e8c;
+}
+
+/* RESULTADO */
+.resultado {
+  text-align: left;
+  margin-top: 1.5rem;
+  background: #f5faff;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  line-height: 1.8;
+}
+
+.btn-reiniciar {
+  background-color: #1e4e8c;
+  margin-top: 2rem;
+}
+
+/* FOOTER */
+.footer-min {
+  background: #1e4e8c;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* O main cresce pra empurrar o footer pra baixo */
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer fixado ao final */
+.footer-min {
+  background: #1e4e8c;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  margin-top: auto; /* isso empurra ele pro fim */
+}
