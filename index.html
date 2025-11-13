@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>ReCode</title>
-    
-    <link rel="stylesheet" href="/src/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Recode</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+
+  
 </head>
 <body>
 
+<!-- ===== HEADER ===== -->
 <header>
     <h1>ReCode</h1>
     <nav>
@@ -19,36 +22,45 @@
     </nav>
 </header>
 
-
+<!-- ===== CARROSSEL ===== -->
 <div class="hero">
-  <!-- Carrossel automático -->
-  <img id="imgBanner" src="./src/assets/carrosel/carrosel1.png" alt="Banner Carrossel">
-
-  <!-- Frase de impacto -->
-  <div class="frase-impacto">
-    "Não é a máquina que avalia o trabalhador — é o trabalhador que usa a máquina para se reinventar."
-  </div>
+    <img id="imgBanner" src="./src/assets/carrosel/carrosel1.png" alt="Banner Carrossel">
 </div>
 
-  <section class="profissao">
-    <h2>Descubra sua profissão do futuro</h2>
-    <p>Escolha sua área, informe sua nota e veja o que o futuro reserva para você.</p>
-    <label>Área de trabalho:
-        <select>
-            <option>Selecione</option>
-        </select>
-    </label>
-    <label>Sua nota (0 a 10):
-        <input type="number" min="0" max="10">
-    </label>
-    <button>Analisar</button>
-  </section>
-<script src="/src/js/carrosel.js"></script>
-<script src="/src/js/script.js"></script>
+<!-- ===== QUADRO DE PROFISSÃO ===== -->
+<section class="profissao">
+  <h2>Descubra sua profissão do futuro</h2>
+  <p>Escolha sua área e informe sua nota.</p>
 
+  <label for="area">Área de trabalho:</label>
+  <select id="area">
+    <option value="">Selecione</option>
+    <option value="hospital">Hospital</option>
+    <option value="cozinha">Cozinha</option>
+    <option value="escritorio">Escritório</option>
+    <option value="tecnologia">Tecnologia</option>
+    <option value="industria">Indústria</option>
+    <option value="comercio">Comércio</option>
+  </select>
+
+  <label for="nota">Sua nota (0 a 10):</label>
+  <input type="number" id="nota" min="0" max="10">
+
+  <button onclick="analisar()">Analisar</button>
+
+  <div id="resultado"></div>
+</section>
+
+
+<!-- ===== FOOTER ===== -->
 <footer>
     <p>© 2025 ReCode | Reinvente seu Futuro - Global Solution</p>
 </footer>
 
+<!-- ===== SCRIPTS ===== -->
+<script src="/src/js/carrosel.js"></script>
+<script src="/src/js/script.js"></script>
+
 </body>
 </html>
+
