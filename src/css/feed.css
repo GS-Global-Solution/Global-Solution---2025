@@ -1,0 +1,136 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #eef5fb;
+  color: #1e3a5f;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #3a7bd5, #1e4e8c);
+  color: white;
+  padding: 1rem 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #ffffffcc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover, .nav-links .active {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* FEED */
+.feed-container {
+  flex: 1;
+  width: 90%;
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.intro {
+  color: #2a4c76;
+  margin-bottom: 2rem;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.post-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.post-header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #3a7bd5;
+}
+
+.post-text {
+  margin-top: 1rem;
+  color: #324c70;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.post-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.post-actions button {
+  background-color: #3a7bd5;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.post-actions button:hover {
+  background-color: #1e4e8c;
+}
+
+/* FOOTER */
+.footer-min {
+  background: #1e4e8c;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+.profile-link {
+  color: #1e4e8c;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.profile-link:hover {
+  text-decoration: underline;
+  color: #3a7bd5;
+}
