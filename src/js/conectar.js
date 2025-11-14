@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!conectado) {
       Swal.fire({
         title: "Conectado com sucesso!",
-        text: "Você agora está conectado(a) com Ana.",
+        text: "Você agora está conectado(a) com este perfil.",
         icon: "success",
         confirmButtonColor: "#1e64e0"
       }).then(() => {
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       Swal.fire({
         title: "Desconectado!",
-        text: "Você cancelou a conexão com Ana.",
+        text: "Você cancelou a conexão com este perfil.",
         icon: "info",
         confirmButtonColor: "#1e64e0"
       }).then(() => {
