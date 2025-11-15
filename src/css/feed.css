@@ -1,3 +1,5 @@
+@import url(/src/css/global.css);
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #eef5fb;
@@ -8,38 +10,7 @@ body {
   min-height: 100vh;
 }
 
-/* HEADER */
-header {
-  background: linear-gradient(135deg, #3a7bd5, #1e4e8c);
-  color: white;
-  padding: 1rem 0;
-}
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 85%;
-  margin: auto;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 1.5rem;
-}
-
-.nav-links a {
-  color: #ffffffcc;
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-.nav-links a:hover, .nav-links .active {
-  color: #fff;
-  text-decoration: underline;
-}
 
 /* FEED */
 .feed-container {
@@ -114,15 +85,6 @@ header {
   background-color: #1e4e8c;
 }
 
-/* FOOTER */
-.footer-min {
-  background: #1e4e8c;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-  font-size: 0.9rem;
-  margin-top: auto;
-}
 
 .profile-link {
   color: #1e4e8c;

@@ -1,3 +1,5 @@
+@import url(/src/css/global.css);
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #eef5fb;
@@ -8,36 +10,7 @@ body {
   min-height: 100vh;
 }
 
-header {
-  background: linear-gradient(135deg, #3a7bd5, #1e4e8c);
-  color: white;
-  padding: 1rem 0;
-}
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 85%;
-  margin: auto;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 1.5rem;
-}
-
-.nav-links a {
-  color: #ffffffcc;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.nav-links a:hover {
-  color: #fff;
-  text-decoration: underline;
-}
 
 /* PERFIL */
 .profile-container {
@@ -113,11 +86,30 @@ header {
   background-color: #1e4e8c;
 }
 
-/* FOOTER */
-.footer-min {
-  background: #1e4e8c;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-  margin-top: auto;
+
+/* MENU ESPECÍFICO DA PÁGINA DE PERFIS */
+.perfil-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin: 0;
+
+  padding: 15px 30px;
+  background-color: #1e64e0;
+
+  justify-content: flex-end;   
+}
+
+
+.perfil-menu a {
+  color: white;          
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: .2s;
+}
+
+.perfil-menu a:hover {
+  opacity: .7;
 }
